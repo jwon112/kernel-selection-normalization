@@ -1,0 +1,28 @@
+{
+  "file_hashes_verified": 542,
+  "cpu_probes": "passed",
+  "stage_cells": 180,
+  "normalization_summary_cells": 540,
+  "table_and_json_files": 18,
+  "split_studies": 1251,
+  "split_patients": 1133,
+  "cuda_initialized": false,
+  "boundary": "Frozen-summary verification; not a raw-image, bootstrap-draw or channel-record reconstruction",
+  "numerical_record_reanalysis": {
+    "status": "passed",
+    "patient_bootstrap_intervals": 10,
+    "draws": 4000,
+    "schedule_fits": 25,
+    "core_fits": 35,
+    "primary_stage_cells": 180,
+    "historical_stage_cells": 36,
+    "pooling_fits": 10,
+    "normalization_cells": 540,
+    "channel_records": 3421824,
+    "channel_distribution_groups": 9,
+    "finite_epsilon_ratio_max_residual": 1.4551915228366852e-11,
+    "finite_epsilon_ratio_max_scaled_residual": 2.2204385659283787e-16,
+    "finite_epsilon_ratio_scaled_tolerance": 1e-12,
+    "boundary": "Reanalysis of recorded numerical outputs, not new image inference, training, or independent replication"
+  }
+}

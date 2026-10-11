@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-11",
+  "platform": "Linux",
+  "python": "3.11.11",
+  "environment": "New venv without system-site-packages; dependencies installed from public indexes",
+  "torch": "2.8.0+cpu",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "installation": "passed",
+  "pip_check": "passed",
+  "extracted_tests": 33,
+  "tests_status": "passed",
+  "archive_origin": "Anonymous public release download",
+  "archive_sha256": "b21afe68c438b7749263ff0be7601b69bdf2dfe125cbd03ad3af0d658cdcbb21",
+  "manifest_hashes": 542,
+  "verification_report": "clean-cpu-verification.json",
+  "freeze": "clean-cpu-freeze.txt",
+  "boundary": "Same Linux host with a separate Python environment; not an independent external machine or image-level rerun."
+}

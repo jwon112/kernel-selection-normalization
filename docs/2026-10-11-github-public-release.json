@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/jwon112/kernel-selection-normalization",
+  "release": "https://github.com/jwon112/kernel-selection-normalization/releases/tag/v1.0.0",
+  "tag": "v1.0.0",
+  "release_id": 409686903,
+  "published_at": "2026-10-11T13:32:50Z",
+  "public": true,
+  "anonymous_download_verified": true,
+  "archive": "mathematics-reproducibility-v1.0.0.zip",
+  "bytes": 299489782,
+  "files": 543,
+  "sha256": "b21afe68c438b7749263ff0be7601b69bdf2dfe125cbd03ad3af0d658cdcbb21",
+  "assets": [
+    {
+      "name": "mathematics-reproducibility-v1.0.0.zip",
+      "url": "https://github.com/jwon112/kernel-selection-normalization/releases/download/v1.0.0/mathematics-reproducibility-v1.0.0.zip",
+      "size": 299489782
+    },
+    {
+      "name": "mathematics-reproducibility-v1.0.0.zip.sha256",
+      "url": "https://github.com/jwon112/kernel-selection-normalization/releases/download/v1.0.0/mathematics-reproducibility-v1.0.0.zip.sha256",
+      "size": 105
+    }
+  ],
+  "commit": "fe3e0780ae1ff18aace6ce794660e83c3fe58e34",
+  "tagged_manuscript_source_pdf_match_local": true,
+  "current_file_sha256": {
+    "main.tex": "583b07ab097064cdc66da112b37f3a4d366a47190cf14d6707fb6837e586e29f",
+    "main.pdf": "c7a15abb2f09ca982f811b2b5c1814b6f3029d0d49e382ecbb2aa139ff6cd543",
+    "cover_letter.tex": "8445329a848dbb0d3594f84e8fdafb87feb2f4059af1919501b27cb11914a02f",
+    "cover_letter.pdf": "829623ecff23281ac1ef8fec935db3a5dc079241ca4045ee1eda59e24a7403f0"
+  },
+  "working_tests_passed": 48,
+  "extracted_tests_passed": 33,
+  "full_artifact_make_check": "passed",
+  "snapshot_note": "Supersedes earlier current-file final-check/author-role/software-role hashes; scientific evidence unchanged."
+}
