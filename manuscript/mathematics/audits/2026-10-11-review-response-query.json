@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "original_query": "Serrano와 Smith의 attention 제거, Michel 등의 head 제거·유지, Dynamic Convolution의 최대 가중치 kernel 선택은 각각 무엇을 시험했으며, 우리의 post-fusion instance normalization을 통과하는 두 branch 제거 정책의 finite-epsilon 분석과 어떻게 다른가?",
+  "english_query": "What do attention removal by Serrano and Smith, head removal and retention by Michel et al., and maximum-weight kernel selection in Dynamic Convolution each test, and how do they differ from our finite-epsilon analysis of two branch-removal policies followed by post-fusion instance normalization?",
+  "required_conditions": [
+    {"id": "c1", "english": "Identify the manipulated unit and whether the intervention removes, retains, or selects the maximum-weight component in a trained system."},
+    {"id": "c2", "english": "Verify whether surviving coefficients are renormalized and which subsequent operators the source actually studies; leave unspecified details unresolved."},
+    {"id": "c3", "english": "Distinguish the source's reported functional endpoint from the per-channel finite-epsilon comparison of paired removal policies in a spatial kernel mixture."}
+  ],
+  "evidence_needs": ["comparison", "limitations", "result", "counterevidence"]
+}

@@ -1,0 +1,25 @@
+{
+  "protocol": "kernel_stage_thirdseed_v1",
+  "authorized_utc_date": "2026-10-02",
+  "predecessor": "results/kernel_stage_fivefold_twoseed_v1/queue/plan.json",
+  "start_rule": "All ten predecessor terminal checkpoints, complete paired intervention grids, and four finished lanes must verify before any third-seed training starts",
+  "base_seed": 20261011,
+  "effective_seed_rule": "base_seed + fold",
+  "folds": [0, 1, 2, 3, 4],
+  "fresh_training": true,
+  "epochs": 100,
+  "primary_checkpoint": "checkpoints/latest.pt at epoch 99",
+  "recipe_rule": "Preserve predecessor frozen trainer/evaluator code and all config fields except seed, experiment/trainer identity and results_root",
+  "primary_endpoint": "study-wise positive-GT WT/TC/ET region-macro Dice, equal-fold mean",
+  "sensitivity_endpoint": "all-study all-region Dice; empty/empty=1, empty/nonempty=0",
+  "interventions": ["drop", "drop_and_renormalize", "keep_one"],
+  "gpu_lanes": {"0": [0], "1": [1], "2": [2, 4], "3": [3]},
+  "aggregate_policy": "Report all fifteen model-fold cells and all three seed pairs; seeds are repeated fits of the same patients, not additional cohorts",
+  "normalization_followup": {
+    "status": "registered_for_after_all_fifteen_models; not implemented or launched by this queue",
+    "checkpoint": "terminal/latest for every model",
+    "selection_rule": "Use the same saved validation membership, all folds and seeds; no favorable-checkpoint selection",
+    "measurements": ["surviving-mixture spatial variance relative to actual epsilon", "paired drop versus renormalized-drop post-normalization tensor differences", "paired downstream logits, masks and Dice differences"],
+    "inference_only": true
+  }
+}

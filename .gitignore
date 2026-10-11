@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+analysis_data/
+PACKAGE_MANIFEST.json
+*.zip
+*.zip.sha256
+reproduction-output/

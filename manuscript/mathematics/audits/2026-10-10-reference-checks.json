@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-10",
+  "scope": "Mathematics manuscript after completed normalization and five-fold revisions",
+  "bibliography_entries": 20,
+  "unique_keys": 20,
+  "distinct_cited_keys": 20,
+  "rendered_entries": 20,
+  "uncited_keys": [],
+  "missing_keys": [],
+  "duplicate_dois": [],
+  "repeated_proceedings_prefix": false,
+  "pdf_pages": 25,
+  "undefined_citation_or_label_warnings": [],
+  "overfull_box_warnings": [],
+  "scientific_payload_identical_to_pre_reference_revision": true,
+  "changed_recorded_sources": [
+    "manuscript/mathematics/main.tex",
+    "manuscript/mathematics/references.bib"
+  ],
+  "source_sha256": {
+    "main.tex": "f1937ad357c2a84add084778c1c779c3e65fa268c380eb3be4d617f60ea54ebd",
+    "references.bib": "bf4e417268f58a8803ce4292962332252b676615c84ba5e03845f7ff87805387",
+    "main.pdf": "0a3ebbac2e514df6be016f49ae759b21051f270f9f3f7e34da66b460e8c2128a"
+  },
+  "review_record": "2026-10-10-reference-review.md",
+  "limits": "Focused source-support and bibliography audit, not exhaustive novelty search or independent replication. Some publisher pages were blocked; original documents and dated verified metadata were used as recorded."
+}

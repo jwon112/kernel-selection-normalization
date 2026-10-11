@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-11",
+  "authors": [
+    "Jaewon Cheon",
+    "Hee Kuk"
+  ],
+  "author_order_unchanged": true,
+  "build": "latexmk passed",
+  "verification": {
+    "main.pdf": {
+      "pages": 25,
+      "sha256": "a12be685f7ff6264e7923f850403344ece00d8aca8910a8d18f7134db0462e03",
+      "shared_first_authorship_text_verified": true
+    },
+    "cover_letter.pdf": {
+      "pages": 1,
+      "sha256": "829623ecff23281ac1ef8fec935db3a5dc079241ca4045ee1eda59e24a7403f0",
+      "shared_first_authorship_text_verified": true
+    },
+    "main.tex": {
+      "sha256": "676f0021ccfd3ba52c4c30b253de880f5b6d4ca2780ff21586d03cc29b500d63"
+    }
+  },
+  "scientific_evidence_unchanged": true,
+  "prior_snapshots": "Supersedes current-file hashes in earlier final-check and author-role-amendment audits; dated review ZIP retained with earlier author metadata."
+}

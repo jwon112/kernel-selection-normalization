@@ -1,0 +1,1272 @@
+{
+  "active_flops_reduction_ranges": {
+    "Attention-derived fixed": [
+      0.5545694279333042,
+      0.5833308437925397
+    ],
+    "Drop-derived fixed": [
+      0.5292123163448486,
+      0.5566586463110472
+    ]
+  },
+  "boundary": "Conditional on fitted models; no patient-weighted target or retraining uncertainty",
+  "common_patient_indices_across_models": true,
+  "fold_counts": [
+    {
+      "fold": 0,
+      "patients": 227,
+      "positive_reference": {
+        "et": {
+          "patients": 223,
+          "studies": 246
+        },
+        "tc": {
+          "patients": 227,
+          "studies": 250
+        },
+        "wt": {
+          "patients": 227,
+          "studies": 251
+        }
+      },
+      "studies": 251
+    },
+    {
+      "fold": 1,
+      "patients": 226,
+      "positive_reference": {
+        "et": {
+          "patients": 220,
+          "studies": 243
+        },
+        "tc": {
+          "patients": 225,
+          "studies": 248
+        },
+        "wt": {
+          "patients": 226,
+          "studies": 250
+        }
+      },
+      "studies": 250
+    },
+    {
+      "fold": 2,
+      "patients": 226,
+      "positive_reference": {
+        "et": {
+          "patients": 221,
+          "studies": 245
+        },
+        "tc": {
+          "patients": 226,
+          "studies": 250
+        },
+        "wt": {
+          "patients": 226,
+          "studies": 250
+        }
+      },
+      "studies": 250
+    },
+    {
+      "fold": 3,
+      "patients": 227,
+      "positive_reference": {
+        "et": {
+          "patients": 221,
+          "studies": 243
+        },
+        "tc": {
+          "patients": 226,
+          "studies": 248
+        },
+        "wt": {
+          "patients": 227,
+          "studies": 250
+        }
+      },
+      "studies": 250
+    },
+    {
+      "fold": 4,
+      "patients": 227,
+      "positive_reference": {
+        "et": {
+          "patients": 219,
+          "studies": 241
+        },
+        "tc": {
+          "patients": 227,
+          "studies": 249
+        },
+        "wt": {
+          "patients": 227,
+          "studies": 250
+        }
+      },
+      "studies": 250
+    }
+  ],
+  "interval_method": "paired-difference percentile; quantiles 0.025 and 0.975",
+  "model_specific_missing_predictions": false,
+  "recorded_profile_boundary": "Identical reported shape and THOP rule, but recorded counts have a shared 0.443925135360-TFLOP shift across historical/extension profiling regimes. Ranges are not harmonized re-profiling.",
+  "runs": [
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_0/config.json",
+      "actual_config_sha256": "2a4fb62558d9f621421d911079e65b87f49b06f821b0209a95a88938a2dd6092",
+      "checkpoint": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_0/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Canonical U-Net",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_0/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "d4b32e497523e8420eba1b7a243c11ef36c3f1df98924d73e0c1ba3c3390cd2f",
+      "fold": 0,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_0/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "4bd6085d9714fb5606e3d2e93aea620fddf8f9b7c1814bfdffa6ba9a9403236e",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": null,
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3794841501696",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "FOLD0_R1_brats23_gli_canonical_unet_crop4",
+      "run_record": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_0/run.json",
+      "run_record_sha256": "695fa56a942a2f72d1f3ef65d671e4133d77296728fb3fe248eb3211ab68680c",
+      "source_config": "configs/brats23_gli_canonical_unet_crop4.json",
+      "source_config_sha256": "b9188a3375b0f8bd151f174a96fb9e4a6987c1e329ca1d7d9dc88b8f1c0b1cbb",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLICanonicalUNetTrainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_1/config.json",
+      "actual_config_sha256": "2a4fb62558d9f621421d911079e65b87f49b06f821b0209a95a88938a2dd6092",
+      "checkpoint": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_1/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Canonical U-Net",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_1/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "ed8ead3a00a2d407d5e74a0e01fe7fa526b57cf5352c8687955621c49f1bee28",
+      "fold": 1,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_1/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "2ce7e93318449065e8953d9e3be4f4b7a6d407373ae5657765f86c8a5ea0cbb0",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": null,
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3794841501696",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "FOLD1_R1_brats23_gli_canonical_unet_crop4",
+      "run_record": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_1/run.json",
+      "run_record_sha256": "ac6be452bf63965becf492562ceb749c23ccd697c281623f16c12a5a3803aec6",
+      "source_config": "configs/brats23_gli_canonical_unet_crop4.json",
+      "source_config_sha256": "b9188a3375b0f8bd151f174a96fb9e4a6987c1e329ca1d7d9dc88b8f1c0b1cbb",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLICanonicalUNetTrainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_2/config.json",
+      "actual_config_sha256": "2a4fb62558d9f621421d911079e65b87f49b06f821b0209a95a88938a2dd6092",
+      "checkpoint": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_2/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Canonical U-Net",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_2/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "13949b7e8a450a36b48438e606cdc4c633b42959384d1bdd0b5a883817140386",
+      "fold": 2,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_2/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "701325dfd418ccdb0e0b4c37dce6a59c31a93d695775a1d5d8cc02a4183f5c5e",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": null,
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3794841501696",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "FOLD2_R1_brats23_gli_canonical_unet_crop4",
+      "run_record": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_2/run.json",
+      "run_record_sha256": "0d47cbc4fdcf15b94decfec7ecaabcdc4b5ae1dc7507aacff61465a8a8fa398a",
+      "source_config": "configs/brats23_gli_canonical_unet_crop4.json",
+      "source_config_sha256": "b9188a3375b0f8bd151f174a96fb9e4a6987c1e329ca1d7d9dc88b8f1c0b1cbb",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLICanonicalUNetTrainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_3/config.json",
+      "actual_config_sha256": "b9188a3375b0f8bd151f174a96fb9e4a6987c1e329ca1d7d9dc88b8f1c0b1cbb",
+      "checkpoint": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_3/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Canonical U-Net",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_3/metrics/epoch_history.jsonl",
+      "final_evaluation_sha256": "dd379381bcb1d433a2ff325c52a9088f045d734e4314411d81396d1def688230",
+      "fold": 3,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_3/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "ce78879de34ac2d7cb64a08e4c19af815c8f8abcdd1f60d99387ad1da13b12ad",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": null,
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "4238766637056",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "20260922T114511Z_fivefold_g0_canonical_f3",
+      "run_record": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_3/run.json",
+      "run_record_sha256": "b3be7059006f6a3a5594e5f4ec65a3c7122cb4007a6e7f3979e880e63145dafb",
+      "source_config": "configs/brats23_gli_canonical_unet_crop4.json",
+      "source_config_sha256": "b9188a3375b0f8bd151f174a96fb9e4a6987c1e329ca1d7d9dc88b8f1c0b1cbb",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLICanonicalUNetTrainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_4/config.json",
+      "actual_config_sha256": "b9188a3375b0f8bd151f174a96fb9e4a6987c1e329ca1d7d9dc88b8f1c0b1cbb",
+      "checkpoint": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_4/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Canonical U-Net",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_4/metrics/epoch_history.jsonl",
+      "final_evaluation_sha256": "299d29d04eaee915f3966eb629829246676be0d1215b39a4c43597d42705750e",
+      "fold": 4,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_4/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "db1b65374224f1efe28b37fdf48da5a1f48559c1ad33e0b9637f91fe6ee9437d",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": null,
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "4238766637056",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "20260922T114511Z_fivefold_g1_canonical_f4",
+      "run_record": "results/brats2023_gli/BraTS23GLICanonicalUNetTrainer/fold_4/run.json",
+      "run_record_sha256": "c6db7af36aea1feadc2729e9b976c0c8d2a208f36b6e6adbafcefb2c9d34d0af",
+      "source_config": "configs/brats23_gli_canonical_unet_crop4.json",
+      "source_config_sha256": "b9188a3375b0f8bd151f174a96fb9e4a6987c1e329ca1d7d9dc88b8f1c0b1cbb",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLICanonicalUNetTrainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_0/config.json",
+      "actual_config_sha256": "0b12cf842c4eade1109171ec34a577eea6419c952e5070cbb61489c5490f3730",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_0/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Attention-derived fixed",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_0/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "17386be9e6d5d01710a42f16c73aba6e0f027989504605f431775e39bd9bb958",
+      "fold": 0,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_0/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "09b5f79dd2663003654265e139bfbf93fd2f84f02f09385bbbde68948ea6e1cc",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "anisotropic",
+            "anisotropic",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3566537146368",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22206403"
+      },
+      "run_id": "FOLD0_R1_brats23_gli_mk_fixed_schedule_attention_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_0/run.json",
+      "run_record_sha256": "7e0efc73776b1a97addbb283797f174ed3a158600d677b7d6e96861fcb0c2ce7",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_attention_100.json",
+      "source_config_sha256": "51bf924caf2c42ebcb4d0f13a1291d9fc21324b9d84c7454145beb6aed2a51a9",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleAttention100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_1/config.json",
+      "actual_config_sha256": "0b12cf842c4eade1109171ec34a577eea6419c952e5070cbb61489c5490f3730",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_1/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Attention-derived fixed",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_1/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "8f7c93fb5cdbd9a24853cee65bc24b6a1082bc2c238f970a96cf6e86208d29d4",
+      "fold": 1,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_1/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "3afc50db92d35ccd41155a75ca915409d3100d0294974afcc91684e57e326a20",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "anisotropic",
+            "anisotropic",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3566537146368",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22206403"
+      },
+      "run_id": "FOLD1_R1_brats23_gli_mk_fixed_schedule_attention_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_1/run.json",
+      "run_record_sha256": "d51624765b93a5ae5c0160817e0c2ae4847fdef0978910fe046338def6c422b0",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_attention_100.json",
+      "source_config_sha256": "51bf924caf2c42ebcb4d0f13a1291d9fc21324b9d84c7454145beb6aed2a51a9",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleAttention100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_2/config.json",
+      "actual_config_sha256": "0b12cf842c4eade1109171ec34a577eea6419c952e5070cbb61489c5490f3730",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_2/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Attention-derived fixed",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_2/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "83d17951d3518b470d49d374f848e84f1b70c85879f084e1a31d1bb942c6af38",
+      "fold": 2,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_2/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "a553bb7c6f1af5b3aa23beea1ae95c5546fc45a2c9762bc86a5471c60baea7be",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "anisotropic",
+            "anisotropic",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3566537146368",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22206403"
+      },
+      "run_id": "FOLD2_R1_brats23_gli_mk_fixed_schedule_attention_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_2/run.json",
+      "run_record_sha256": "1ed827e7508c39e53dd59aeb647bfba106ea6b16d2e745ce4b2703696885a8df",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_attention_100.json",
+      "source_config_sha256": "51bf924caf2c42ebcb4d0f13a1291d9fc21324b9d84c7454145beb6aed2a51a9",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleAttention100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_3/config.json",
+      "actual_config_sha256": "f23d7d711db2b2e233a028a0504abe20e84fb154bcce50eb37ddd95e86e8c069",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_3/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Attention-derived fixed",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_3/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "642b579498dec9560ae6b387ad7c809ed4c06dd2a60ab26c1fc65d0f420a11d4",
+      "fold": 3,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_3/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "b21451ea5eb5fd02b394159b90ccc085443c4063bf2a407fb381c697c89cf500",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "anisotropic",
+            "anisotropic",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "4010462281728",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22206403"
+      },
+      "run_id": "MATH5F_attention_fold3_1791459745654622244",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_3/run.json",
+      "run_record_sha256": "958de4cdeefdacade53d0a2a3030747b13032789c1379aee5945c77c2f0ec283",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_attention_100.json",
+      "source_config_sha256": "51bf924caf2c42ebcb4d0f13a1291d9fc21324b9d84c7454145beb6aed2a51a9",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleAttention100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_4/config.json",
+      "actual_config_sha256": "f23d7d711db2b2e233a028a0504abe20e84fb154bcce50eb37ddd95e86e8c069",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_4/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Attention-derived fixed",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_4/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "8eff34034933458b2b768fbf06eb5c7770a968c38e4d172274f2296c0d1539ca",
+      "fold": 4,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_4/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "bd930166741e45a6e53c40876d71afdf5fc1c7c5bb031f565dcae47a01c57336",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "anisotropic",
+            "anisotropic",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "4010462281728",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22206403"
+      },
+      "run_id": "MATH5F_attention_fold4_1791459763720223701",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleAttention100Trainer/fold_4/run.json",
+      "run_record_sha256": "6a8042154f8cb79e39e913d416852d4e267ea7f582ea98e9ff011a64eddd0a5b",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_attention_100.json",
+      "source_config_sha256": "51bf924caf2c42ebcb4d0f13a1291d9fc21324b9d84c7454145beb6aed2a51a9",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleAttention100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_0/config.json",
+      "actual_config_sha256": "c3804fdd4d9c24248d5bc9efff919c29ef0ebc25e9fded98d8e0bec0d4c03e26",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_0/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Drop-derived fixed",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_0/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "e02bdc494c24b2318b53d0a0f74c2cfc16e6f4dfae4dff48352f88187c30c08c",
+      "fold": 0,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_0/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "5f4dd0c9f43f7b6c81e656cf560226e6523b5aac3be785dff6ed6ac42c4c2fe0",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "dilated_k3",
+            "k3",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3794841501696",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "FOLD0_R1_brats23_gli_mk_fixed_schedule_drop_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_0/run.json",
+      "run_record_sha256": "796a574b422bb801861c1a2ae87fd42eb7a7bd617bb1f56eb4457d8cb1662d83",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_drop_100.json",
+      "source_config_sha256": "87ee7200bf454adb1e01d36403f30b4d5cdc664d6d5de54a5f369806feff8417",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleDrop100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_1/config.json",
+      "actual_config_sha256": "c3804fdd4d9c24248d5bc9efff919c29ef0ebc25e9fded98d8e0bec0d4c03e26",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_1/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Drop-derived fixed",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_1/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "1df8289cc9e021c9585a893587a1b74aec976aa2fd07cc94dab1bca3f26e5115",
+      "fold": 1,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_1/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "4f7b60c04cf6cafbde595c0f31dfc646720b59015f2f29d25b98d9632b72a177",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "dilated_k3",
+            "k3",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3794841501696",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "FOLD1_R1_brats23_gli_mk_fixed_schedule_drop_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_1/run.json",
+      "run_record_sha256": "4fb133bf808b379726d95158e6cf6ed8e8aea41bbb25c30e956dda93642b82ba",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_drop_100.json",
+      "source_config_sha256": "87ee7200bf454adb1e01d36403f30b4d5cdc664d6d5de54a5f369806feff8417",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleDrop100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_2/config.json",
+      "actual_config_sha256": "c3804fdd4d9c24248d5bc9efff919c29ef0ebc25e9fded98d8e0bec0d4c03e26",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_2/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Drop-derived fixed",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_2/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "16b1d95695eaf8b0742cbe46608818b2d663514b86c5d3feb84582bbfc911a72",
+      "fold": 2,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_2/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "3c2ad6af3b604dfea0ab56f00b1414425255b953a14aa6e84cd95b37b598fc37",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "dilated_k3",
+            "k3",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "3794841501696",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "FOLD2_R1_brats23_gli_mk_fixed_schedule_drop_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_2/run.json",
+      "run_record_sha256": "b6746cf5d817f03b53a5c044319dfd222c834f3fb5ca4c32bf3b22102c5fd6ab",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_drop_100.json",
+      "source_config_sha256": "87ee7200bf454adb1e01d36403f30b4d5cdc664d6d5de54a5f369806feff8417",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleDrop100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_3/config.json",
+      "actual_config_sha256": "bb158f4e9da76b20b25bc73944fecd2e02ec89a85dac1ca94bdb4fc90923a9b5",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_3/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Drop-derived fixed",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_3/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "a33efcc92a61065765aee7754b0af87ef2d1b0ec8524d81357910bd35d9850f6",
+      "fold": 3,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_3/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "2dee85d5e11f4213a46648a4c8b9886b27324b6dae7a4755041b2056ed80a129",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "dilated_k3",
+            "k3",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "4238766637056",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "MATH5F_drop_fold3_1791484119398656568",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_3/run.json",
+      "run_record_sha256": "5f27174313c25572353d29ce24038f3492f5fbd73b8f7d7490aef6eccb9bbc1f",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_drop_100.json",
+      "source_config_sha256": "87ee7200bf454adb1e01d36403f30b4d5cdc664d6d5de54a5f369806feff8417",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleDrop100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_4/config.json",
+      "actual_config_sha256": "bb158f4e9da76b20b25bc73944fecd2e02ec89a85dac1ca94bdb4fc90923a9b5",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_4/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Drop-derived fixed",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_4/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "d87e97b2063c590df7e9d6ce1d8c609ab0848a6b44c1cfd8194782f46a6ad8af",
+      "fold": 4,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_4/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "4a8b210880b800b5b39ae358b4af886faab6a5e48bb4a55c4e41291bc52531e4",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ],
+          "selector_fixed_branches": [
+            "dilated_k3",
+            "k3",
+            "k3"
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "4238766637056",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "22575043"
+      },
+      "run_id": "MATH5F_drop_fold4_1791459745651017161",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKFixedScheduleDrop100Trainer/fold_4/run.json",
+      "run_record_sha256": "a7c731aa9683073173db1b197ea787e57dd8fa810bcbb73355dd6f88dcd57bff",
+      "source_config": "configs/brats23_gli_mk_fixed_schedule_drop_100.json",
+      "source_config_sha256": "87ee7200bf454adb1e01d36403f30b4d5cdc664d6d5de54a5f369806feff8417",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKFixedScheduleDrop100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_0/config.json",
+      "actual_config_sha256": "cdb299000b1390bae5e67694d8cc70b1955209f638cbdf45990e349edfec6186",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_0/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage uniform",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_0/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "5303afc7b1ff354328ed9cc83197d43d0774e8b0d68756b3236b900c40299626",
+      "fold": 0,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_0/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "b3246c39153aabcaae6672fafb364f16ef8024a39387ecac5b24d5918adbc737",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "8559637954560",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26037187"
+      },
+      "run_id": "FOLD0_R1_brats23_gli_mk_multistage_uniform_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_0/run.json",
+      "run_record_sha256": "d5263d6cb87e04324ccf6b703a659ecb70b82df4e6282f06b98eb9e35e2df5a8",
+      "source_config": "configs/brats23_gli_mk_multistage_uniform_100.json",
+      "source_config_sha256": "0a3897fa9874205fa0db5b2b62ca85d131410b637367d323030e34cec3bf9ef0",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageUniform100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_1/config.json",
+      "actual_config_sha256": "cdb299000b1390bae5e67694d8cc70b1955209f638cbdf45990e349edfec6186",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_1/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage uniform",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_1/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "e4027684d5fd331fed88391879cd5e10fc19b99ff105b3983e473de566fb455f",
+      "fold": 1,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_1/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "d33817909a11449652548fa407b1175a4a1807b309c9e34ffd4001e1f3b0a8b4",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "8559637954560",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26037187"
+      },
+      "run_id": "FOLD1_R1_brats23_gli_mk_multistage_uniform_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_1/run.json",
+      "run_record_sha256": "82e12a32311d6a31deb803eceeccfbb1429fd5ac9ddefd7f0314fc26f590a346",
+      "source_config": "configs/brats23_gli_mk_multistage_uniform_100.json",
+      "source_config_sha256": "0a3897fa9874205fa0db5b2b62ca85d131410b637367d323030e34cec3bf9ef0",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageUniform100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_2/config.json",
+      "actual_config_sha256": "cdb299000b1390bae5e67694d8cc70b1955209f638cbdf45990e349edfec6186",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_2/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage uniform",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_2/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "8df18373e66966e0b2124fac79528cc15b4ea69915bcce1210bf30851f8ebcf3",
+      "fold": 2,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_2/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "9e0bafbad1ba5d43898721db952e2edb6f0e439d307c3c6272eef6829a46a21c",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "8559637954560",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26037187"
+      },
+      "run_id": "FOLD2_R1_brats23_gli_mk_multistage_uniform_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_2/run.json",
+      "run_record_sha256": "19c3f7a3fdfe5c935612db59810597b89fbb84c1bbea2d03353e608d1e2698e9",
+      "source_config": "configs/brats23_gli_mk_multistage_uniform_100.json",
+      "source_config_sha256": "0a3897fa9874205fa0db5b2b62ca85d131410b637367d323030e34cec3bf9ef0",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageUniform100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_3/config.json",
+      "actual_config_sha256": "74f9fdee72ecec7cb34b4490959ce0987c169a86b602bbd2d21f0a25ee619ce8",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_3/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage uniform",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_3/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "42f5f92913f525a44f0ee9059f0135775938e71fcb1ebec2f16352fd350e41e3",
+      "fold": 3,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_3/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "beb5f77e8a2155c7ef6a20cc572026aefd2fdaa9e6a9605a095a915c19b76a80",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "9003563089920",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26037187"
+      },
+      "run_id": "MATH5F_uniform_fold3_1791486382321561641",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_3/run.json",
+      "run_record_sha256": "8f1b99b4d81630513fe75476514f7b7a3e03b18ff6676e6f64bf05dd8d4cc541",
+      "source_config": "configs/brats23_gli_mk_multistage_uniform_100.json",
+      "source_config_sha256": "0a3897fa9874205fa0db5b2b62ca85d131410b637367d323030e34cec3bf9ef0",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageUniform100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_4/config.json",
+      "actual_config_sha256": "74f9fdee72ecec7cb34b4490959ce0987c169a86b602bbd2d21f0a25ee619ce8",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_4/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage uniform",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_4/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "beca1f4478be51d62f476a851f12f4b53c177f7af78c1985a6a928c31e36cea8",
+      "fold": 4,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_4/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "b0d175643194c44ac142fb64390b0a9f1c334676c6087af6a818dc6230295276",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "9003563089920",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26037187"
+      },
+      "run_id": "MATH5F_uniform_fold4_1791459763729584236",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageUniform100Trainer/fold_4/run.json",
+      "run_record_sha256": "0e1d9b83eb3929af35107f35b3ee4bf3e7fe54777110b5636cf44b801adf8398",
+      "source_config": "configs/brats23_gli_mk_multistage_uniform_100.json",
+      "source_config_sha256": "0a3897fa9874205fa0db5b2b62ca85d131410b637367d323030e34cec3bf9ef0",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageUniform100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_0/config.json",
+      "actual_config_sha256": "cd69ac7d816e55df8bdd0d4b07bc3fad8afb2109f56b7b8f38f47af5a865002a",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_0/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage SK",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_0/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "23c17ca4e2fb08e8d3652c47f245b80085fffcccef14fc04390a84fb79816ebb",
+      "fold": 0,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_0/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "6b65b3d3db5c8ce19fb8b41ab75e216b9d8b6f4334fbd1fb801bc7593a18f091",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "8559638008320",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26065019"
+      },
+      "run_id": "FOLD0_R1_brats23_gli_mk_multistage_sk_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_0/run.json",
+      "run_record_sha256": "2f7a00910227130150a824df0ed40fe185c88ab2cdb761ceb86eb9df516f5812",
+      "source_config": "configs/brats23_gli_mk_multistage_sk_100.json",
+      "source_config_sha256": "76cfd44157fad18e572767a9f25570413009c889d0b51faa71a7ebc080cdf1e6",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageSK100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_1/config.json",
+      "actual_config_sha256": "cd69ac7d816e55df8bdd0d4b07bc3fad8afb2109f56b7b8f38f47af5a865002a",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_1/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage SK",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_1/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "62a69e2fa76329ab3240899d1349e2033d3b48e88a94326c5e7d85fbd851aa41",
+      "fold": 1,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_1/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "681d8b5d7a654f780cd32dd8ac7cad8925da742c570bb993f798337e7a2b9c25",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "8559638008320",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26065019"
+      },
+      "run_id": "FOLD1_R1_brats23_gli_mk_multistage_sk_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_1/run.json",
+      "run_record_sha256": "d74ddedf3958b83186e7c30e68a345624a33b3d92c4ff213352ad801a7992abc",
+      "source_config": "configs/brats23_gli_mk_multistage_sk_100.json",
+      "source_config_sha256": "76cfd44157fad18e572767a9f25570413009c889d0b51faa71a7ebc080cdf1e6",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageSK100Trainer"
+    },
+    {
+      "actual_config": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_2/config.json",
+      "actual_config_sha256": "cd69ac7d816e55df8bdd0d4b07bc3fad8afb2109f56b7b8f38f47af5a865002a",
+      "checkpoint": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_2/checkpoints/latest.pt",
+      "checkpoint_content_hashed": false,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage SK",
+      "final_evaluation": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_2/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "90b195b8ef8ed83dc9c1bc4135ab797f88765aab8e8273c66e3bce78a5b62693",
+      "fold": 2,
+      "metric_and_profile": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_2/metrics/fold_validation_final.csv",
+      "metric_and_profile_sha256": "0e1b8dac68bfc71dfac7053836c776bfd1301debdd2ba2784ac7715895863e98",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "8559638008320",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26065019"
+      },
+      "run_id": "FOLD2_R1_brats23_gli_mk_multistage_sk_100",
+      "run_record": "results/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_2/run.json",
+      "run_record_sha256": "527b89c6145aae3c05ce2eb73eec61c390fd5c60955f267c49a9eda68a8a9bc6",
+      "source_config": "configs/brats23_gli_mk_multistage_sk_100.json",
+      "source_config_sha256": "76cfd44157fad18e572767a9f25570413009c889d0b51faa71a7ebc080cdf1e6",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageSK100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_3/config.json",
+      "actual_config_sha256": "6df10cb8f7a4f9da45e48243deca843d1a6ab66c80b3e161d0812c8e41dccbf3",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_3/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage SK",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_3/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "9fffe4dcac363d0b4b3cc1b9a7c03b239bfe15df84f5a4bd7703f9ca6106fd72",
+      "fold": 3,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_3/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "e826715eac28d8d4be8dab2e3ea378caafe694fa1495c2f133285a4bc9d6dcb0",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "9003563143680",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26065019"
+      },
+      "run_id": "MATH5F_sk_fold3_1791504651578573241",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_3/run.json",
+      "run_record_sha256": "25ed6dfb331d1a0ddeeaa78b30232fcb829684a653566417c2ae1f9137543091",
+      "source_config": "configs/brats23_gli_mk_multistage_sk_100.json",
+      "source_config_sha256": "76cfd44157fad18e572767a9f25570413009c889d0b51faa71a7ebc080cdf1e6",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageSK100Trainer"
+    },
+    {
+      "actual_config": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_4/config.json",
+      "actual_config_sha256": "6df10cb8f7a4f9da45e48243deca843d1a6ab66c80b3e161d0812c8e41dccbf3",
+      "checkpoint": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_4/checkpoints/latest.pt",
+      "checkpoint_content_hashed": true,
+      "config_comparison_boundary": "Compares recorded non-path fields; excludes data_dir, results_root, output_dir",
+      "config_differences": {},
+      "family": "Multi-stage SK",
+      "final_evaluation": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_4/metrics/final_epoch_evaluation.json",
+      "final_evaluation_sha256": "68016d1082004aedc696bb06f5524fe847d06754e050f3f3cd7661677f259335",
+      "fold": 4,
+      "metric_and_profile": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_4/metrics/fold_validation_final_epoch.csv",
+      "metric_and_profile_sha256": "e28b828add8b86c4214c46fcc9388b1d3150a3208262315fdd190a27f5ce78d3",
+      "recipe": {
+        "augmentation": "nnunet_gpu",
+        "batch_size": 4,
+        "checkpoint_selection": "final_epoch",
+        "epochs": 100,
+        "learning_rate": 0.0002,
+        "model_kwargs": {
+          "selector_decoder_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        "precision": "bf16",
+        "seed": 2026,
+        "weight_decay": 1e-05
+      },
+      "recorded_profile": {
+        "active_flops_per_volume": "9003563143680",
+        "flops_input_shape": "192x224x192",
+        "flops_method": "THOP; FLOPs=2xMACs; batch=1; active=total",
+        "parameters": "26065019"
+      },
+      "run_id": "MATH5F_sk_fold4_1791517773583528101",
+      "run_record": "results/mathematics_fold_completion_v1/brats2023_gli/BraTS23GLIMKMultiStageSK100Trainer/fold_4/run.json",
+      "run_record_sha256": "3023b7db60eec29f075a8e0d34df95f5fda7d4cf96b80841cffc5b00894f8616",
+      "source_config": "configs/brats23_gli_mk_multistage_sk_100.json",
+      "source_config_sha256": "76cfd44157fad18e572767a9f25570413009c889d0b51faa71a7ebc080cdf1e6",
+      "terminal_epoch_zero_based": 99,
+      "trainer": "BraTS23GLIMKMultiStageSK100Trainer"
+    }
+  ],
+  "transpose_accounting_offset": {
+    "boundary": "Exact arithmetic match to the common recorded offset; historical imported profiler version is not established.",
+    "terms": [
+      {
+        "flops_difference": 29595009024,
+        "input_channels": 512,
+        "input_voxels": 2016,
+        "output_channels": 256,
+        "output_voxels": 16128
+      },
+      {
+        "flops_difference": 59190018048,
+        "input_channels": 256,
+        "input_voxels": 16128,
+        "output_channels": 128,
+        "output_voxels": 129024
+      },
+      {
+        "flops_difference": 118380036096,
+        "input_channels": 128,
+        "input_voxels": 129024,
+        "output_channels": 64,
+        "output_voxels": 1032192
+      },
+      {
+        "flops_difference": 236760072192,
+        "input_channels": 64,
+        "input_voxels": 1032192,
+        "output_channels": 32,
+        "output_voxels": 8257536
+      }
+    ],
+    "total_flops": 443925135360
+  },
+  "weighting": "equal-fold, equal-region; study means within eligible region",
+  "zero_positive_reference_draw": "raises ValueError, never silently dropped"
+}

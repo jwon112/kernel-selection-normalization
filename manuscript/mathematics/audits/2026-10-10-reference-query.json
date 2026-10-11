@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "original_query": "커널 선택 가중치의 기능적 의미를 평가할 때 정규화, 분기 제거, 단독 경로, 재학습 비교에 관한 선행 문헌은 각각 어떤 주장까지 뒷받침하는가?",
+  "english_query": "When evaluating the functional meaning of kernel-selection weights, which claims are supported by prior literature on normalization, branch removal, forced single paths, and retraining comparisons, respectively?",
+  "required_conditions": [
+    {"id": "c1", "english": "Identify the operator or intervention actually studied, distinguishing token attention from convolutional kernel mixtures."},
+    {"id": "c2", "english": "Distinguish frozen-system ablation or forced-path evidence from performance after retraining."},
+    {"id": "c3", "english": "Identify what the cited study does and does not establish about the interpretation of selection weights."}
+  ],
+  "evidence_needs": ["result", "comparison", "limitations", "counterevidence"]
+}

@@ -1,0 +1,152 @@
+{
+  "split_sha256": "bebc73384313df1dc721624ceb08ded657765e954df630a176ab13c18d8fe7fe",
+  "selection": [
+    {
+      "fold": 0,
+      "patients": [
+        "BraTS-GLI-00032",
+        "BraTS-GLI-01439"
+      ],
+      "studies": [
+        "BraTS-GLI-00032-000",
+        "BraTS-GLI-00032-001",
+        "BraTS-GLI-01439-000"
+      ],
+      "original_batch_indices": [
+        2,
+        56
+      ],
+      "engineering_batch_studies": [
+        [
+          "BraTS-GLI-00032-000",
+          "BraTS-GLI-00032-001",
+          "BraTS-GLI-00035-000",
+          "BraTS-GLI-00036-000"
+        ],
+        [
+          "BraTS-GLI-01439-000",
+          "BraTS-GLI-01440-000",
+          "BraTS-GLI-01442-000",
+          "BraTS-GLI-01443-000"
+        ]
+      ]
+    },
+    {
+      "fold": 1,
+      "patients": [
+        "BraTS-GLI-01138",
+        "BraTS-GLI-00432"
+      ],
+      "studies": [
+        "BraTS-GLI-00432-000",
+        "BraTS-GLI-01138-000"
+      ],
+      "original_batch_indices": [
+        17,
+        43
+      ],
+      "engineering_batch_studies": [
+        [
+          "BraTS-GLI-00432-000",
+          "BraTS-GLI-00442-000",
+          "BraTS-GLI-00451-000",
+          "BraTS-GLI-00452-000"
+        ],
+        [
+          "BraTS-GLI-01129-000",
+          "BraTS-GLI-01133-000",
+          "BraTS-GLI-01138-000",
+          "BraTS-GLI-01140-000"
+        ]
+      ]
+    },
+    {
+      "fold": 2,
+      "patients": [
+        "BraTS-GLI-01392",
+        "BraTS-GLI-01074"
+      ],
+      "studies": [
+        "BraTS-GLI-01074-000",
+        "BraTS-GLI-01392-000"
+      ],
+      "original_batch_indices": [
+        34,
+        53
+      ],
+      "engineering_batch_studies": [
+        [
+          "BraTS-GLI-01067-000",
+          "BraTS-GLI-01074-000",
+          "BraTS-GLI-01077-000",
+          "BraTS-GLI-01081-000"
+        ],
+        [
+          "BraTS-GLI-01391-000",
+          "BraTS-GLI-01392-000",
+          "BraTS-GLI-01393-000",
+          "BraTS-GLI-01403-000"
+        ]
+      ]
+    },
+    {
+      "fold": 3,
+      "patients": [
+        "BraTS-GLI-00805",
+        "BraTS-GLI-00454"
+      ],
+      "studies": [
+        "BraTS-GLI-00454-000",
+        "BraTS-GLI-00805-000"
+      ],
+      "original_batch_indices": [
+        17,
+        34
+      ],
+      "engineering_batch_studies": [
+        [
+          "BraTS-GLI-00454-000",
+          "BraTS-GLI-00456-000",
+          "BraTS-GLI-00457-000",
+          "BraTS-GLI-00468-000"
+        ],
+        [
+          "BraTS-GLI-00802-000",
+          "BraTS-GLI-00805-000",
+          "BraTS-GLI-00808-000",
+          "BraTS-GLI-00809-000"
+        ]
+      ]
+    },
+    {
+      "fold": 4,
+      "patients": [
+        "BraTS-GLI-00391",
+        "BraTS-GLI-00399"
+      ],
+      "studies": [
+        "BraTS-GLI-00391-000",
+        "BraTS-GLI-00399-000"
+      ],
+      "original_batch_indices": [
+        15,
+        16
+      ],
+      "engineering_batch_studies": [
+        [
+          "BraTS-GLI-00364-000",
+          "BraTS-GLI-00375-000",
+          "BraTS-GLI-00377-000",
+          "BraTS-GLI-00391-000"
+        ],
+        [
+          "BraTS-GLI-00399-000",
+          "BraTS-GLI-00413-000",
+          "BraTS-GLI-00417-000",
+          "BraTS-GLI-00426-000"
+        ]
+      ]
+    }
+  ],
+  "rule": "first two SHA256-ranked patients per fold; no outcome selection"
+}

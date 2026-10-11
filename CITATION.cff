@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and specify the release version used."
+title: "Functional Meaning of Kernel-Selection Weights: Normalization, Branch Interventions, and Static Simplification in 3D Segmentation"
+type: software
+version: 1.0.0
+date-released: 2026-10-11
+url: "https://github.com/jwon112/kernel-selection-normalization"
+repository-code: "https://github.com/jwon112/kernel-selection-normalization"
+authors:
+  - family-names: Cheon
+    given-names: Jaewon
+  - family-names: Kuk
+    given-names: Hee
+  - family-names: Abbas
+    given-names: Zeeshan
+  - family-names: Lee
+    given-names: Seung Won
+abstract: "Operator-conditioned analysis of kernel-selection interventions and normalization in 3D segmentation. Jaewon Cheon and Hee Kuk share first authorship. Manuscript prepared for Mathematics; publication has not been asserted."

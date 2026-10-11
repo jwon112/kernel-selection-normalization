@@ -1,0 +1,46 @@
+{
+  "protocol": "kernel_normalization_audit_v1",
+  "registered_on": "2026-10-04",
+  "status": "registered_design; instrumented clinical inference not implemented or queued yet",
+  "authorization": "User prefers useful evidence-strengthening work before considering claim narrowing.",
+  "existing_outcomes_seen": "Two-seed manuscript and 120-cell paired audit. Post-result mechanism investigation, not outcome-blind confirmation.",
+  "dependency": "All 15 terminal models and complete learned/drop/renormalized-drop/keep-one grids, all lanes and the activated fold-4 reassignment must finish and pass artifact validation.",
+  "base_seeds": [2026, 20261001, 20261011],
+  "folds": [0, 1, 2, 3, 4],
+  "stages": [1, 2, 3],
+  "branches": ["k3", "k5", "dilated_k3", "anisotropic"],
+  "checkpoint": "terminal/latest, epoch 99; content hashes frozen before inference",
+  "validation_membership": "All original validation studies in saved folds; patient ID removes final hyphen component; seeds reuse the same studies.",
+  "primary_endpoint": "Per-region study-mean Dice over positive-reference studies, equal WT/TC/ET mean; summarize folds equally. All-case/empty-region sensitivity separate.",
+  "primary_runtime": "Original frozen evaluator: bfloat16 inputs and CUDA bfloat16 autocast, batch size 4, unchanged preprocessing and mask thresholds. Record actual instrumented dtypes.",
+  "hypotheses": {
+    "finite_epsilon": "Surviving-mixture variance/epsilon and scale predict paired post-IN differences under the ideal shared-tensor relation.",
+    "numerical_precision": "Weight renormalization, products and accumulation may violate pre-IN proportionality; quantify before attributing differences to epsilon.",
+    "downstream_response": "Subsequent selectors, nonlinearities and decision margins may amplify measured stage discrepancies. Mechanisms can coexist."
+  },
+  "measurements": [
+    "Study/patient/fold/base and effective seed/stage/branch/checkpoint hash/runtime dtype",
+    "Pre-edit channel weights, surviving mass, actual floored denominator and post-edit weights; zero/floor counts",
+    "Per-channel spatial variance using actual normalization convention, epsilon and scale",
+    "Pre-IN residual z_renorm minus t*z_drop, absolute and relative; flag zero-norm cases",
+    "Paired post-IN/pre-activation discrepancies and finite-epsilon identity residuals",
+    "Downstream selector changes, logits, near-threshold margins, region mask disagreement and paired Dice effects"
+  ],
+  "local_reference_replay": "Replay identical captured branch tensors/pre-edit weights in float64 separately from native-runtime tensors. Use biased spatial variance. Local epsilon sweep 0, 1e-8, 1e-5, 1e-3 does not modify clinical checkpoints; zero epsilon/zero variance is undefined and reported.",
+  "precision_sensitivity": {
+    "selection": "First two unique patients per fold ordered by SHA256('kernel_normalization_audit_v1:' + patient_id); every validation study of these patients, all seeds and stage/branch edits. Freeze IDs before inference.",
+    "comparison": "Full float32 inference without autocast, float32 inputs/weights, TF32 disabled and recorded, versus primary bfloat16 inference on identical selected studies.",
+    "boundary": "Local float64 replay isolates arithmetic on fixed representations; full float32 also changes upstream representations. Exploratory sensitivity, not cohort-level accuracy comparison."
+  },
+  "engineering_gate": [
+    "Validate config, epoch, checkpoint content, splits and completed CSV hashes",
+    "CPU probes for mass above/below floor, zero mass, constant mixtures and epsilon-zero domain",
+    "Compare instrumented and uninstrumented primary-runtime outputs on deterministic subset; measure repeated-forward noise before fixing empirical numerical tolerances",
+    "Reproduce stored primary-runtime paired Dice; unexplained differences block full mechanism reporting",
+    "Check selected-stage upstream tensors and pre-edit weights agree across paired runs; record deviations rather than assume exact proportionality"
+  ],
+  "analysis": "All 180 branch cells and 45 seed/fold/stage groups. Retain hierarchical study/channel identifiers; no channel-count inflation of sample size. Report winner agreement and effect magnitude, descriptive variance/scale/arithmetic/downstream relationships. No positive or significant result required.",
+  "resources": "Inference only after the full matrix gate; inspect CPU/I/O/GPU before launch, one worker per free GPU, streaming summaries instead of full-cohort tensor dumps.",
+  "outputs": "results/kernel_normalization_audit_v1/ with distinct attempts, source/code/environment hashes, fidelity report, per-study/channel summaries and scientific report",
+  "claim_policy": "Retain manuscript while gathering evidence; decide interpretation after diagnostics without guaranteeing present wording under every outcome."
+}

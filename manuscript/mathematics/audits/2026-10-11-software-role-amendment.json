@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-11",
+  "amendment": "Software assigned jointly to J.C. and H.K. by explicit user request.",
+  "build": "latexmk passed",
+  "rendered_contribution_text": "Author Contributions: Conceptualization, visualization, and writing—original draft preparation,\n546\nJ.C.; methodology, software, formal analysis, data curation, validation, and investigation, J.C. and\n547\nH.K.; supervision, Z.A.; writing—review and editing, J.C., H.K., and S.W.L. J.C. and H.K. contributed\n548\nequally to this work and share first authorship.\n549\n",
+  "pages": 25,
+  "hashes": {
+    "main.tex": "905fde319b5ede36ea8855c044407bb079a0f50841b5fba8cffd4f913cbc73ba",
+    "main.pdf": "c674fa214e1654b56f291b32e3eceecf185e2c64f8fe8b523e0bb3b06a8789a5"
+  },
+  "scientific_evidence_unchanged": true,
+  "supersedes": "Earlier main.tex/main.pdf hashes in final-check, author-role-amendment and shared-first-authorship audits. Dated review ZIP preserved with earlier metadata; refresh before submission."
+}

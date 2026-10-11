@@ -1,0 +1,22 @@
+{
+  "protocol": "kernel_stage_fivefold_twoseed_v1",
+  "base_seeds": [2026, 20261001],
+  "effective_seed_rule": "base_seed + fold",
+  "folds": [0, 1, 2, 3, 4],
+  "fresh_training": true,
+  "epochs": 100,
+  "primary_checkpoint": "checkpoints/latest.pt at epoch 99",
+  "primary_endpoint": "study-wise positive-GT WT/TC/ET region-macro Dice, equal-fold mean",
+  "primary_diagnostics": ["weight versus drop-effect Spearman", "weight versus renormalized-drop-effect Spearman", "weight versus keep-one Dice Spearman"],
+  "sensitivity_endpoint": "all-study all-region Dice; empty/empty=1, empty/nonempty=0",
+  "stage_branch_grid": {"decoder_stages": [1, 2, 3], "branches": ["k3", "k5", "dilated_k3", "anisotropic"]},
+  "interventions": ["drop", "drop_and_renormalize", "keep_one"],
+  "aggregate_policy": "Report all ten cells; pooled correlations descriptive; repeated seed outcomes are not additional patients",
+  "gpu_lanes": {
+    "0": [[2026, 0], [20261001, 2], [2026, 4]],
+    "1": [[20261001, 0], [2026, 2], [20261001, 4]],
+    "2": [[2026, 1], [20261001, 3]],
+    "3": [[20261001, 1], [2026, 3]]
+  },
+  "future_seed_decision": "Only after this complete ten-run matrix is assessed"
+}

@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Mode/stage & Channels & Min $v/\epsilon$ & Max post RMS & Max prediction RMS & Floored \\
+\midrule
+Full BF16/1 & 1,921,536 & 1.95e-13 & 1.00e+00 & 1.93e-06 & 411 \\
+Full BF16/2 & 960,768 & 1.88e+00 & 1.92e-01 & 1.95e-06 & 0 \\
+Full BF16/3 & 480,384 & 7.68e+01 & 6.15e-03 & 4.95e-06 & 0 \\
+Subset BF16/1 & 16,896 & 6.09e-12 & 1.00e+00 & 1.43e-06 & 3 \\
+Subset BF16/2 & 8,448 & 3.66e+00 & 1.14e-01 & 1.41e-06 & 0 \\
+Subset BF16/3 & 4,224 & 1.15e+02 & 4.31e-03 & 1.52e-06 & 0 \\
+Subset FP32/1 & 16,896 & 5.55e-12 & 1.00e+00 & 1.06e-06 & 3 \\
+Subset FP32/2 & 8,448 & 3.60e+00 & 1.15e-01 & 1.54e-06 & 0 \\
+Subset FP32/3 & 4,224 & 1.15e+02 & 4.30e-03 & 1.64e-06 & 0 \\
+\bottomrule
+\end{tabular}

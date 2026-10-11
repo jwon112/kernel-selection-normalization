@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-11",
+  "change": "User assigned Formal analysis and Data curation jointly to J.C. and H.K.; existing roles retained.",
+  "build": "latexmk PDF build passed",
+  "pdf_text_author_contributions": "Author Contributions: Conceptualization, software, visualization, and writing—original draft\n546\npreparation, J.C.; methodology, formal analysis, data curation, validation, and investigation, J.C. and\n547\nH.K.; supervision, Z.A.; writing—review and editing, J.C., H.K., and S.W.L.\n548\nFunding: This research was supported by a grant of the Korea Health Technology R&D Project\n549\nthrough the Korea Health Industry Development Institute (KHIDI), funded by the Ministry of Health\n550\n& Welfare, Republic of Korea (RS-2025-02309552).\n551\nInstitutional Review Board Statement: This study is a secondary computational analysis of previ-\n552\nously collecte",
+  "hashes": {
+    "main.tex": "bacbec037aaedc8742b5a0eb390096e2ade57c05780f3695f845518e4b138946",
+    "main.pdf": "92df4ed7b20bf72ec15abcf37a80478205a41fa5f7c3ecbcb0fc0eedd05315a8"
+  },
+  "scientific_evidence_changed": false,
+  "prior_snapshot_note": "Author-role amendment supersedes main.tex/main.pdf hashes in 2026-10-11-final-check.json; prior numerical checks were not rerun for this metadata-only change."
+}

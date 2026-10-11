@@ -1,0 +1,72 @@
+{
+  "dataset": "BraTS 2023 GLI benchmark, anatomical crop margin 4",
+  "source_dataset": "data/processed/brats_multidomain_v2",
+  "case_count": 1251,
+  "patient_count": 1133,
+  "shape": [
+    192,
+    224,
+    192
+  ],
+  "modalities": [
+    "t2f",
+    "t1n",
+    "t1c",
+    "t2w"
+  ],
+  "normalization": "per-case per-modality nonzero z-score clipped [-5,5] after anatomical crop",
+  "target_encoding": "brats_regions_from_atomic_123",
+  "regions": {
+    "WT": "atomic labels 1|2|3",
+    "TC": "atomic labels 1|3",
+    "ET": "atomic label 3"
+  },
+  "split": {
+    "scheme": "5-fold patient-grouped CV",
+    "patient_key": "BraTS-GLI-{patient}; study suffix excluded",
+    "seed": 2026,
+    "folds": [
+      {
+        "fold": 0,
+        "train_cases": 1000,
+        "val_cases": 251,
+        "train_patients": 906,
+        "val_patients": 227,
+        "patient_overlap": 0
+      },
+      {
+        "fold": 1,
+        "train_cases": 1001,
+        "val_cases": 250,
+        "train_patients": 907,
+        "val_patients": 226,
+        "patient_overlap": 0
+      },
+      {
+        "fold": 2,
+        "train_cases": 1001,
+        "val_cases": 250,
+        "train_patients": 907,
+        "val_patients": 226,
+        "patient_overlap": 0
+      },
+      {
+        "fold": 3,
+        "train_cases": 1001,
+        "val_cases": 250,
+        "train_patients": 906,
+        "val_patients": 227,
+        "patient_overlap": 0
+      },
+      {
+        "fold": 4,
+        "train_cases": 1001,
+        "val_cases": 250,
+        "train_patients": 906,
+        "val_patients": 227,
+        "patient_overlap": 0
+      }
+    ]
+  },
+  "storage": "images and raw labels are symlinked from brats_multidomain_v2; region targets are converted on load"
+}
